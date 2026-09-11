@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Asma-ul-Husna | 99 Names of Allah</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-star-and-crescent"></i>
+                </div>
+
+                <div>
+                    <h2>Asma-ul-Husna</h2>
+                    <span>99 Names of Allah</span>
+                </div>
+            </div>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#names">Names</a>
+                <a href="#recitation">Recitation</a>
+                <a href="#about">About</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="stars"></div>
+
+        <div class="hero-content">
+
+            <div class="moon">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+
+            <p class="arabic-small">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+
+            <h1>
+                The 99 Beautiful
+                <span>Names of Allah</span>
+            </h1>
+
+            <p class="hero-description">
+                Explore, read and listen to the beautiful names of Allah
+                with their meanings and pronunciation.
+            </p>
+
+            <a href="#names" class="hero-button">
+                Explore Names
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RECITATION ================= -->
+
+    <section class="recitation-section" id="recitation">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    <i class="fa-solid fa-headphones"></i>
+                    LISTEN
+                </span>
+
+                <h2>Asma-ul-Husna Recitation</h2>
+
+                <p>
+                    Listen to the complete recitation of the 99 Names of Allah.
+                </p>
+
+            </div>
+
+
+            <div class="player-card">
+
+                <div class="player-top">
+
+                    <div class="player-icon">
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+
+                    <div class="player-info">
+
+                        <h3>99 Names of Allah</h3>
+
+                        <p>
+                            Complete Asma-ul-Husna Recitation
+                        </p>
+
+                    </div>
+
+                    <div class="playing-animation" id="playingAnimation">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- REAL AUDIO -->
+
+                <audio
+                    id="recitationAudio"
+                    preload="metadata"
+                >
+
+                    <source
+                        src="https://upload.wikimedia.org/wikipedia/commons/5/54/Asma_Ul_Husna.ogg"
+                        type="audio/ogg"
+                    >
+
+                    Your browser does not support the audio element.
+
+                </audio>
+
+
+                <!-- CUSTOM PROGRESS -->
+
+                <div class="audio-progress-area">
+
+                    <span id="currentTime">0:00</span>
+
+                    <input
+                        type="range"
+                        id="progressBar"
+                        min="0"
+                        max="100"
+                        value="0"
+                    >
+
+                    <span id="duration">0:00</span>
+
+                </div>
+
+
+                <!-- PLAYER CONTROLS -->
+
+                <div class="player-controls">
+
+                    <button
+                        class="control-button"
+                        id="previousButton"
+                        title="Restart"
+                    >
+                        <i class="fa-solid fa-backward-step"></i>
+                    </button>
+
+
+                    <button
+                        class="main-play-button"
+                        id="playButton"
+                        title="Play"
+                    >
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+
+
+                    <button
+                        class="control-button"
+                        id="nextButton"
+                        title="Restart"
+                    >
+                        <i class="fa-solid fa-forward-step"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- VOLUME -->
+
+                <div class="volume-control">
+
+                    <i
+                        class="fa-solid fa-volume-high"
+                        id="volumeIcon"
+                    ></i>
+
+                    <input
+                        type="range"
+                        id="volumeBar"
+                        min="0"
+                        max="1"
+                        step="0.01"
+                        value="1"
+                    >
+
+                </div>
+
+
+                <button
+                    class="recite-all-button"
+                    id="reciteAllButton"
+                >
+
+                    <i class="fa-solid fa-play"></i>
+
+                    Recite All 99 Names
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NAMES ================= -->
+
+    <section class="names-section" id="names">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    <i class="fa-solid fa-book-quran"></i>
+                    EXPLORE
+                </span>
+
+                <h2>99 Names of Allah</h2>
+
+                <p>
+                    Discover the beautiful names and their meanings.
+                </p>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="search-container">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search by name, transliteration or meaning..."
+                >
+
+            </div>
+
+
+            <!-- NAME COUNT -->
+
+            <div class="name-count">
+
+                Showing
+                <strong id="nameCount">99</strong>
+                beautiful names
+
+            </div>
+
+
+            <!-- NAMES GRID -->
+
+            <div
+                class="names-grid"
+                id="namesGrid"
+            ></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about-section" id="about">
+
+        <div class="container">
+
+            <div class="about-card">
+
+                <div class="about-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <h2>Remember Allah</h2>
+
+                <p>
+                    The Asma-ul-Husna are the beautiful names of Allah.
+                    Learning, remembering and reflecting upon these names
+                    can help us understand the attributes and greatness of Allah.
+                </p>
+
+                <div class="dua">
+                    <span>
+                        وَ لِلَّهِ الْأَسْمَاءُ الْحُسْنَىٰ فَادْعُوهُ بِهَا
+                    </span>
+
+                    <p>
+                        "And to Allah belong the Most Beautiful Names,
+                        so call upon Him by them."
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <div class="footer-logo">
+
+                <i class="fa-solid fa-star-and-crescent"></i>
+
+                <span>
+                    Asma-ul-Husna
+                </span>
+
+            </div>
+
+            <p>
+                99 Beautiful Names of Allah
+            </p>
+
+            <p class="copyright">
+                © 2026 Asma-ul-Husna. Made with ❤️ for remembrance of Allah.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
